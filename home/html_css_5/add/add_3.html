@@ -2,12 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Рамка_2</title>
+    <title>AREA</title>
 </head>
 <body>
-    
+    <h1>Тэг AREA</h1>
+    <p>Тег area создаёт на картинке невидимую область по координатам, а потом присваивает 
+        ей ссылку. Жмём на область — переходим по ссылке.
 
-
+    </p>
+    <p>
+        Область может быть прямоугольной, круглой или многоугольной формы. Тег area не может 
+        использоваться самостоятельно и должен всегда находиться внутри контейнера map.
+    </p>
+    <h2>Пример:</h2>
+    <map name="doka">
+        <area shape="rect" coords="3,3,273,62" href="https://doka.guide/html/">
+        <area shape="rect" coords="3,67,273,126" href="https://doka.guide/css/">
+<!--        <area shape="rect" coords="273,190,3,131" href="https://doka.guide/js/"  > -->
+        <area shape="circle" coords="137,161,31" href="https://doka.guide/js/"  >
+    </map>    
+    <img usemap="#doka" src="img/html_css_js.png" alt="HTML_CSS_JS">
 
 </body>
 </html>
