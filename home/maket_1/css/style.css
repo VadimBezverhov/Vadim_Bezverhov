@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.stem-m-18 {
+    font-family: 'Stem Med';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.gilroy-sb-18 {
+    font-family: 'Gilroy';
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.container {
+    width: 1440px;
+    margin: 0 auto;
+}
+.btn {
+    height: 56px;
+    background-color: #EF476F;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    color: #FFFFFF;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+}
+
+/* header */
+
+.header {
+    height: 80px;
+    background-color: #FFFFFF;
+}
+
+.header-left {
+    float: left;
+    margin-left: 10px;
+    margin-top: 24px;
+}
+
+.logo {
+    height: 70px;
+    float: left;
+    margin-left: 60px;
+    margin-top: 5px;
+}
+
+.company {
+    font-family: 'Stem';
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 32px;
+    float: left;
+}
+
+.header-right {
+    float: right;
+    margin-right: 140px;
+    margin-top: 17px;
+}
+
+.header-menu {
+    float: right;
+    padding-top: 11px;
+}
+
+.header-menu-text {
+    color: rgba(0,0,0,0.7);
+    margin-right: 24px;
+}
+
+.header-phone {
+    float: right;
+    margin-left: 40px;
+}
+
+.phone-text {
+    font-family: 'Stem';
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 18px;
+    color: rgba(0,0,0,0.7);
+    text-align: right;
+}
+
+.phone-numb {
+    color: black;
+    text-align: right;
+}
+
+/* main */
+
+.main {
+    height: 798px;
+    background: url("../img/background1.jpg") center center no-repeat;
+    background-size: cover;
+}
+
+.main-back {
+    background-color: rgba(7, 59, 76, 0.4);
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.main-left {
+    width: 445px;
+    float: left;
+    margin-top: 238px;
+    margin-left: 165px;
+}
+
+.main-title {
+    font-family: 'Stem';
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 68px;
+    color: #FFFFFF;
+    text-align: left;
+    margin-bottom: 24px;
+}
+
+.main-text {
+    font-family: 'Stem Med';
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 130%;
+    color: rgba(255, 255, 255, 0.8);
+    text-align: left;
+    margin-top: 24px;
+}
+
+.main-right {
+    width: 445px;
+    height: 460px;
+    float: right;
+    background-color: #FFFFFF;
+    margin-right: 165px;
+    margin-top: 169px;
+    padding: 40px;
+    border-radius: 16px;
+}
+
+.main-insp-text {
+    color: black;
+    text-align: left;
+    margin-bottom: 24px;
+}
+
+.main-right input {
+    width: 365px;
+    height: 56px;
+    margin-bottom: 12px;
+    font-family: 'Stem';
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+    padding-left: 20px;
+    border-width: 1px;
+    border-radius: 6px;
+    border-color: rgba(0,0,0,0.1);
+    outline: none;
+}
+
+.main-right input::placeholder {
+    color: rgba(0,0,0,0.2);
+    opacity: 1;
+}
+
+.main-insp-btn {
+    border-radius: 6px;
+    width: 365px;
+    margin-top: 4px;
+    margin-bottom: 24px;
+}
+
+.main-insp-time {
+    font-family: 'Stem Med';
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: rgba(0,0,0,0.4);
+    text-align: center;
+}
+
+/* about */
+
+.about {
+    height: 720px;
+    background-color: #FFFFFF;
+}
+
+.about-left {
+    width: 540px;
+    float: left;
+    margin-top: 168px;
+    margin-left: 165px;
+}
+
+.about-text1 {
+    color: #118AB2;
+    margin-bottom: 16px;
+}
+
+.about-text2 {
+    font-family: 'Gilroy';
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 52px;
+    color: black;
+    margin-bottom: 16px;
+}
+
+.about-text3 {
+    color: rgba(0,0,0,0.7);
+    margin-bottom: 16px;
+}
+
+.about-text4 {
+    color: rgba(0,0,0,0.7);
+    margin-bottom: 32px;
+}
+
+.about-btn {
+    width: 161px;
+    border-radius: 4px;
+    font-family: 'Gilroy';
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.about-right {
+    width: 445px;
+    height: 520px;
+    float: right;
+    margin-right: 165px;
+    margin-top: 100px;
+    background-color: chocolate;
+}
