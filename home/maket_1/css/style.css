@@ -9,6 +9,21 @@ a {
     text-decoration: none;
 }
 
+.stem-b-64 {
+    font-family: 'Stem';
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 68px;
+    color: #FFFFFF;
+}
+
+.stem-m-24 {
+    font-family: 'Stem Med';
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 130%;
+}
+
 .stem-m-18 {
     font-family: 'Stem Med';
     font-weight: 500;
@@ -27,6 +42,14 @@ a {
     width: 1440px;
     margin: 0 auto;
 }
+
+.back {
+    background-color: rgba(7, 59, 76, 0.4);
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
 .btn {
     height: 56px;
     background-color: #EF476F;
@@ -109,13 +132,6 @@ a {
     background-size: cover;
 }
 
-.main-back {
-    background-color: rgba(7, 59, 76, 0.4);
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-}
-
 .main-left {
     width: 445px;
     float: left;
@@ -124,20 +140,11 @@ a {
 }
 
 .main-title {
-    font-family: 'Stem';
-    font-weight: bold;
-    font-size: 64px;
-    line-height: 68px;
-    color: #FFFFFF;
     text-align: left;
     margin-bottom: 24px;
 }
 
 .main-text {
-    font-family: 'Stem Med';
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 130%;
     color: rgba(255, 255, 255, 0.8);
     text-align: left;
     margin-top: 24px;
@@ -244,10 +251,148 @@ a {
 }
 
 .about-right {
+    position: relative;
     width: 445px;
     height: 520px;
     float: right;
     margin-right: 165px;
     margin-top: 100px;
-    background-color: chocolate;
+}
+
+.about-right div {
+    position: absolute;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about-right-img1 {
+    width: 350px;
+    height: 350px;
+    margin-top: 170px;
+    background-image: url(../img/about1.jpg);
+    background-position: 0px -90px;
+}
+
+.about-right-img2 {
+    width: 255px;
+    height: 255px;
+    margin-left: 190px;
+    background-image: url(../img/about2.jpg);
+    background-position: 0px -60px;
+}
+
+/* repair */
+
+.repair {
+    height: 946px;
+    background: url("../img/background2.jpg") center center no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.repair h4 {
+    font-family: 'Stem Med';
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 130%;
+    color: #FFFFFF;
+    margin-top: 32px;
+    margin-bottom: 16px;
+}
+
+.repair-row1 p, .repair-row2 p {
+    font-family: 'Stem';
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.repair-header {
+    width: 730px;
+    height: 154px;
+    margin: 0 auto;
+    margin-top: 120px;
+}
+
+.repair-header-text1 {
+    margin-bottom: 24px;
+}
+
+.repair-header-text2 {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.repair-row1 {
+    width: 1110px;
+    height: 188px;
+    margin: 0 auto;
+    margin-top: 64px;
+}
+
+.repair-row2 {
+    width: 1110px;
+    height: 236px;
+    margin: 0 auto;
+    margin-top: 64px;
+}
+
+.row1-cell {
+    width: 350px;
+    height: 188px;
+}
+
+.row2-cell {
+    width: 350px;
+    height: 236px;
+}
+
+.row1-cell1 {
+    float: left;
+}
+
+.row1-cell3 {
+    float: right;
+}
+
+.row1-cell2 {
+    margin: 0 auto;
+}
+
+.row2-cell1 {
+    float: left;
+}
+
+.row2-cell3 {
+    float: right;
+}
+
+.row2-cell2 {
+    margin: 0 auto;
+}
+
+.cell-icon {
+    width: 80px;
+    height: 80px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position: -40px -32px;
+    margin: 0 auto;
+}
+
+.r1-icon1 {
+    background-image: url(../img/icon01.png);
+}
+
+.r1-icon2 {
+    background-image: url(../img/icon02.png);
+}
+
+.r1-icon3 {
+    background-image: url(../img/icon03.png);
+}
+
+.r2-icon1, .r2-icon2, .r2-icon3 {
+    background-image: url(../img/icon04.png);
 }
