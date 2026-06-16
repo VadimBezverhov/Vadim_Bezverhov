@@ -8,9 +8,23 @@
 <body>
     <form style="width: 300px;" action="https://fe.it-academy.by/TestForm.php">
         <fieldset>
+            <legend>Строка поиска</legend><label>*</label>
+            <input type="text" name="text" maxlength="10" required autofocus>
+            <input type="submit" value="Искать"><br>
+            <input type="radio" name="rad" value="1" checked>на сайте
+            <input type="radio" name="rad" value="2">в google<br>
+            <label>Длина запроса не более 10 символов</label><br>
+            <label>* обязательное поле</label><br>
+            <label>Автофокус в поле поиска</label>
+        </fieldset>
+    </form>
+    <hr>
+    <form style="width: 300px;" action="https://fe.it-academy.by/TestForm.php">
+        <fieldset>
             <legend>Авторизуйтесь</legend>
-            <input type="text" name="login"><label>* Логин</label><br>
-            <input type="password" name="pass"><label>* Пароль</label><br>
+            <!-- фокус на поле при нажатии на label -->
+            <input type="text" name="login" id="id_login" required><label for="id_login">* Логин</label><br>
+            <input type="password" name="pass" id="id_pass" required><label for="id_pass">* Пароль</label><br>
             <input type="checkbox" name="system"><label>Оставаться в системе</label><br>
             <input type="submit" value="Войти"><br>
             <label>* обязательное поле</label>
@@ -30,19 +44,61 @@
         </fieldset>
     </form>
     <hr>
-    <form style="width: 300px;" action="https://fe.it-academy.by/TestForm.php">
+    <form style="width: 300px;" action="https://fe.it-academy.by/TestForm.php" method="post">
          <fieldset>
-            <legend>Оставьте ваш отзыв</legend>
-            <input type="text" name="name"><label>* Имя</label><br>
-            <input type="text" name="email"><label>* E-Mail</label><br>
-
-
-
+             <legend>Оставьте ваш отзыв</legend>
+            <!-- фокус на поле при нажатии на label автоматически если input внутри -->
+            <label>
+                <input type="text" name="name" required>
+                * Имя
+            </label><br>
+            <label>
+                <input type="text" name="email" required>
+                * e-mail
+            </label><br>
+            <textarea name="otziv">Форма отправки</textarea><br>
             <input type="submit" value="Отправить"><br>
-            <label>* Есть скрытое поле <br> name=date_voite, value="2013.12.31"</label>
+            <label>* обязательное поле</label><br>
+            <label>поле email - с проверкой метод POST</label>
         </fieldset>
     </form>
-
+    <hr>
+    <form style="width: 300px;" action="https://fe.it-academy.by/TestForm.php">
+         <fieldset>
+            <legend>Города РБ</legend>
+            <select name="city1"">
+                <option value="1">Брест</option>
+                <option value="2">Минск</option>
+                <option value="3">Витебск</option>
+            </select>
+            <select name="city2[]" size="8" multiple>
+                <option>Города РБ</option>
+                <option value="1">Брест</option>
+                <option value="2">Минск</option>
+                <option value="3">Витебск</option>
+                <option>Города России</option>
+                <option value="4">Москва</option>
+                <option value="5">Рязань</option>
+                <option value="6">Магадан</option>
+            </select>
+            <input type="submit" value="Ок">
+        </fieldset>
+    </form>
+    <hr>
+    <form style="width: 300px;" action="https://fe.it-academy.by/TestForm.php" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Upload</legend>
+            <label>Файл:</label>
+            <input type="file" name="load_file">
+            <label>
+                Срок хранения (года):<br>
+                <input type="text" name="years">
+                <input type="submit" value="Загрузить">
+            </label>
+            <label>Метод POST</label><br>
+            <label>В тэге form атрибут enctype="multipart/form-data" для отправки файла на сервер</label>
+        </fieldset>
+    </form>
 
 </body>
 </html>

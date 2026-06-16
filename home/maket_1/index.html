@@ -44,12 +44,23 @@
                         Твой автомобить в надежных руках
                     </p>
                 </div>
-                <div class="main-right">
+                <!-- <div class="main-right">
                     <p class="stem-m-18 main-insp-text">Запишитесь на бесплатный осмотр подвески прямо сейчас</p>
                     <input type="text" placeholder="Ваше имя">
                     <input type="text" placeholder="Контактный телефон">
                     <input type="text" placeholder="Марка автомобиля">
                     <button class="btn stem-m-18 main-insp-btn">Оставить заявку</button>
+                    <p class="main-insp-time">Акция действует до 10.01.2023</p>
+                </div> -->
+
+                <div class="main-right">
+                    <p class="stem-m-18 main-insp-text">Запишитесь на бесплатный осмотр подвески прямо сейчас</p>
+                    <form action="https://fe.it-academy.by/TestForm.php" method="get">
+                        <input type="text" name="name" placeholder="Ваше имя">
+                        <input type="text" name="phone" placeholder="Контактный телефон">
+                        <input type="text" name="avto" placeholder="Марка автомобиля">
+                        <input class="btn stem-m-18 main-insp-btn" type="submit" value="Оставить заявку">
+                    </form>
                     <p class="main-insp-time">Акция действует до 10.01.2023</p>
                 </div>
             </div>
@@ -141,7 +152,7 @@
         </div>
 
         <div class="gallery">
-            <div class="gallery-view">
+            <!-- <div class="gallery-view"> -->
                 <div class="gallery-img" id="img1">
                     <img src="img/img_1.jpg">
                 </div>
@@ -151,11 +162,14 @@
                 <div class="gallery-img" id="img3">
                     <img src="img/img_3.jpg">
                 </div>
-            </div>
+            <!-- </div> -->
             <div class="gallery-menu">
-                <a href="#img1">img1</a>
-                <a href="#img2">img2</a>
-                <a href="#img3">img3</a>
+                <a class="gallery-btn g-b1"
+                    href="#img1"></a>
+                <a class="gallery-btn g-b2"
+                    href="#img2"></a>
+                <a class="gallery-btn g-b3"
+                    href="#img3"></a>
             </div>
         </div>
 
@@ -333,10 +347,14 @@
                 Проблема с автомобилем? Мы<br>
                 поможем!
             </h3>
-            <div class="help-call">
+            <!-- <div class="help-call">
                 <input class="help-input" type="text" placeholder="+7 (000) 000-0000">
                 <button class="btn gilroy-b-18 help-btn">Связаться с нами</button>
-            </div>
+            </div> -->
+            <form class="help-call" action="https://fe.it-academy.by/TestForm.php" method="get">
+                <input class="help-input" type="text" name="phone" placeholder="+7 (000) 000-0000">
+                <input class="btn gilroy-b-18 help-btn" type="submit" value="Связаться с нами">
+            </form>
             <p class="help-bottom">
                 Оставляя заявку, вы соглашаетесь на 
                 <span class="help-bottom-bold">

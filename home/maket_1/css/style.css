@@ -435,6 +435,7 @@ input::placeholder {
     width: 1109px;
     height: 427px;
     background-color: #F7F8FA;
+    border-radius: 24px;
     margin: 0 auto;
     padding-top: 80px;
 }
@@ -464,17 +465,21 @@ input::placeholder {
 .gallery {
     width: 1440px;
     height: 798px;
+    position: relative;
 }
 
 .gallery-menu {
-    height: 20px;
-    text-align: center;
+    width: 280px;
+    height: 80px;
+    position: absolute;
+    left: 590px;
+    bottom: 100px;
 }
 
-.gallery-view {
+/* .gallery-view {
     width: 1440px;
     height: 778px;
-}
+} */
 
 .gallery-img {
     width: 100%;
@@ -489,7 +494,7 @@ input::placeholder {
     display: block;
 }
 
-.gallery-view .gallery-img:first-of-type {
+/* .gallery-view .gallery-img:first-of-type {
     display: block;
 }
 
@@ -499,7 +504,66 @@ input::placeholder {
 
 .gallery-view .gallery-img:target {
     display: block;
+  } */
+
+.gallery .gallery-img:first-of-type {
+    display: block;
+}
+
+.gallery:has(.gallery-img:target) .gallery-img:first-of-type:not(:target) {
+    display: none;
+}
+
+.gallery .gallery-img:target {
+    display: block;
   }
+
+.gallery-btn {
+    display: block;
+    float: left;
+    width: 80px;
+    height: 80px;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 8px;
+    border-color: #FFFFFF;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+}
+
+.g-b1 {
+    background-image: url(../img/img_1.jpg);
+    background-position: -20px 0px;
+}
+
+.g-b2 {
+    background-image: url(../img/img_2.jpg);
+    background-position: 0px -20px;
+}
+
+.g-b3 {
+    background-image: url(../img/img_3.jpg);
+    background-position: 0px -20px;
+}
+
+/* рамка для первой кнопки-ссылки по умолчанию (пока хэша нет вообще) */
+.gallery:not(:has(:target)) .g-b1 {
+    border-color: #FFD166;
+}
+
+/* если в URL активирован #img1 -> красим .g-b1 */
+#img1:target ~ .gallery-menu .g-b1 {
+    border-color: #FFD166;
+}
+
+#img2:target ~ .gallery-menu .g-b2 {
+    border-color: #FFD166;
+}
+
+#img3:target ~ .gallery-menu .g-b3 {
+    border-color: #FFD166;
+}
 
 /* sertif */
 
