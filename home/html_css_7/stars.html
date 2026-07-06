@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .block1 {
+            width: 400px;
+            height: 78px;
+        }
+
+        .bl-img {
+            width: 78px;
+            height: 78px;
+            background-image: url(img/star0.png);
+            background-size: cover;
+            background-position: center;
+            float: right /* блоки выстраиваем справа налево (первый по коду будет самым правым) */
+        }
+
+        .bl-img:hover, .bl-img:hover ~ .bl-img {
+            background-image: url(img/star1.png);
+            /* активный блок и все следующие за ним в коде (на экране они слева) меняют картинку */
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="block1">
+        <div class="bl-img"></div>
+        <div class="bl-img"></div>
+        <div class="bl-img"></div>
+        <div class="bl-img"></div>
+        <div class="bl-img"></div>
+    </div>
+</body>
+</html>

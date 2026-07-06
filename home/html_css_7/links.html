@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        a {
+            color: green;
+        }
+
+        a:hover {
+            color: red;
+        }
+
+        .menu1 a {
+            padding-right: 10px;
+            padding-left: 10px;
+            border-right-style: solid;
+            border-right-color: red;
+            border-right-width: 2px;
+        }
+
+        .menu1 a:last-child {
+            border-right: none;
+        }
+
+        .menu2 a {
+            margin-right: 10px;
+        }
+
+        .menu2 a::after {
+            content: '|';
+            color: red;
+            margin-left: 10px;
+        }
+
+        .menu2 a:last-child::after {
+            content: '';
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="menu1">
+        <a href=''>первая ссылка</a>
+        <a href=''>вторая ссылка</a>
+        <a href=''>третья ссылка</a>
+        <a href=''>четвертая ссылка</a>
+        <a href=''>пятая ссылка</a>
+    </div>
+    <br>
+    <div class="menu2">
+        <a href=''>первая ссылка</a>
+        <a href=''>вторая ссылка</a>
+        <a href=''>третья ссылка</a>
+        <a href=''>четвертая ссылка</a>
+        <a href=''>пятая ссылка</a>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .main {
+            padding: 5px;
+        }
+
+        .bl_1, .bl_2, .bl_3, .bl_4, .bl_5, .bl_6 {
+            overflow: hidden;
+            margin-bottom: 5px;
+        }
+
+        .bl_2_1, .bl_3_1, .bl_4_1, .bl_5_1 {
+            float: left;
+            width: 200px;
+        }
+
+        .bl_2_2, .bl_3_2, .bl_4_2, .bl_5_2 {
+            overflow: hidden;
+        }
+
+        .bl_1 {
+            margin-bottom: 15px;
+        }
+
+        .name, .rubr, .text {
+            width: 100%;
+        }
+
+        .text {
+            height: 80px;
+        }
+
+        @media all and (max-width: 600px) {
+            .bl_2_1, .bl_3_1, .bl_4_1 {
+                float: none;
+                margin-bottom: 2px;
+            }
+
+            .radio::after {
+                content: '\A';
+                white-space: pre;
+            }
+
+            .text {
+                height: 140px;
+            }            
+        }
+
+        @media all and (max-width: 250px) {
+            .bl_5_1 {
+                float: none;
+            }
+
+            .text {
+                height: 200px;
+            }
+        }
+
+</style>
+
+</head>
+<body>
+    <form class="main" action="https://fe.it-academy.by/TestForm.php">
+        <div class="bl_1">
+            Для публикации вашей статьи заполните, пожалуйста, следующую форму:
+        </div>
+        
+        <div class="bl_2">
+            <div class="bl_2_1">
+                Название статьи:
+            </div>
+            <div class="bl_2_2">
+                <input class="name" type="text" name="name">
+            </div>
+        </div>
+
+        <div class="bl_3">
+            <div class="bl_3_1">
+                Рубрика:
+            </div>
+            <div class="bl_3_2">
+                <select class="rubr" name="rubr">
+                    <option value="1">Компьютерная техника</option>
+                    <option value="2">Графика и дизайн</option>
+                    <option value="3" selected>Программирование</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="bl_4">
+            <div class="bl_4_1">
+                Публикация:
+            </div>
+            <div class="bl_4_2">
+                <label class="radio">
+                    <input type="radio" name="public" value="1">
+                    на сайте
+                </label>
+                <label class="radio">
+                    <input type="radio" name="public" value="2">
+                    в журнале
+                </label>
+                <label class="radio">
+                    <input type="radio" name="public" value="3">
+                    на сайте и в журнале
+                </label>
+            </div>
+        </div>
+
+        <div class="bl_5">
+            <div class="bl_5_1">
+                Разрешить комментарии:
+            </div>
+            <div class="bl_5_2">
+                <input type="checkbox" name="comment" checked>
+            </div>
+        </div>
+
+        <div class="bl_6">
+            <div>
+                Текст статьи:    
+            </div>
+            <div class="bl_6_2">
+                <textarea class="text" name="text"></textarea>
+            </div>
+        </div>
+
+        <input type="submit" value="Опубликовать"><br>
+    </form>
+
+</body>
+</html>
