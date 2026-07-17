@@ -1,0 +1,65 @@
+@font-face {
+    font-family: 'Benzin';
+    src: url('Benzin-Bold.eot');
+    src: url('Benzin-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Benzin-Bold.woff2') format('woff2'),
+        url('Benzin-Bold.woff') format('woff'),
+        url('Benzin-Bold.ttf') format('truetype'),
+        url('Benzin-Bold.svg#Benzin-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Benzin';
+    src: url('Benzin-ExtraBold.eot');
+    src: url('Benzin-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('Benzin-ExtraBold.woff2') format('woff2'),
+        url('Benzin-ExtraBold.woff') format('woff'),
+        url('Benzin-ExtraBold.ttf') format('truetype'),
+        url('Benzin-ExtraBold.svg#Benzin-ExtraBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Benzin';
+    src: url('Benzin-Medium.eot');
+    src: url('Benzin-Medium.eot?#iefix') format('embedded-opentype'),
+        url('Benzin-Medium.woff2') format('woff2'),
+        url('Benzin-Medium.woff') format('woff'),
+        url('Benzin-Medium.ttf') format('truetype'),
+        url('Benzin-Medium.svg#Benzin-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Benzin';
+    src: url('Benzin-Regular.eot');
+    src: url('Benzin-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Benzin-Regular.woff2') format('woff2'),
+        url('Benzin-Regular.woff') format('woff'),
+        url('Benzin-Regular.ttf') format('truetype'),
+        url('Benzin-Regular.svg#Benzin-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Benzin';
+    src: url('Benzin-Semibold.eot');
+    src: url('Benzin-Semibold.eot?#iefix') format('embedded-opentype'),
+        url('Benzin-Semibold.woff2') format('woff2'),
+        url('Benzin-Semibold.woff') format('woff'),
+        url('Benzin-Semibold.ttf') format('truetype'),
+        url('Benzin-Semibold.svg#Benzin-Semibold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+

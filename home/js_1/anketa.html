@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var famil = prompt('Фамилия:');
+        var imya = prompt('Имя:');
+        var otch = prompt('Отчество:');
+
+        do {
+            var ageStr = prompt('Возраст в годах:');
+            var age = parseInt(ageStr);
+        }
+        while(isNaN(age));
+
+        var gender = confirm('Ваш пол мужской?')
+        var ageDay = age * 365;
+        var age5 = age + 5;
+
+        var message = 'Ваше ФИО: ' + famil + ' ' + imya + ' ' + otch + '\n' +
+                        'Ваш возраст в годах: ' + age + '\n' + 
+                        'Ваш возраст в днях: ' + ageDay + '\n' + 
+                        'Через 5 лет вам будет: ' + age5 + '\n';
+
+        if (gender)
+            message += 'Ваш пол: мужской' + '\n';
+        else
+            message += 'Ваш пол: женский' + '\n';
+
+        message = (age > 62) ? message += 'Вы на пенсии: да': message += 'Вы на пенсии: нет';
+
+        alert(message);
+
+    </script>
+</body>
+</html>
