@@ -1200,6 +1200,7 @@
     background-color: #EED9B2;
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 
 .priem-str2 {
@@ -1208,7 +1209,7 @@
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    align-content: space-between;
+    align-content: space-around;
     padding-left: 28px;
     padding-right: 28px;
 }
@@ -1220,13 +1221,11 @@
 }
 
 .priem-btn2 {
-    width: 65px;
+    width: 80px;
     height: 65px;
     color: #FFFFFF;
     text-align: center;
-    border: none;
-    text-decoration: none;
-    padding-top: 17px;
+    padding-top: 10px;
 }
 
 .priem-txt1 {
@@ -1268,8 +1267,6 @@
 .priem-bl3 {
     width: 390px;
     height: 174px;
-    /* display: flex;
-    flex-direction: column; */
 }
 
 .priem-btn3 {
@@ -1303,27 +1300,7 @@
     right: 15px;
 }
 
-
-
-
-
-.priem-str4 {
-    width: 390px;
-    height: 174px;
-    display: flex;
-    flex-direction: column;
-}
-
-.priem-str5 {
-    width: 390px;
-    height: 74px;
-    background-color: #FFEDCB;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.priem-str6 {
+.priem-add {
     width: 390px;
     height: 100px;
     border-bottom-right-radius: 8px;
@@ -1331,32 +1308,13 @@
     background-color: #FFEDCB;
 }
 
-.priem-txt2 {
-    width: 245px;
-    height: 20px;
-    color: #000000;
-    margin-left: 23px;
-}
-
-.priem-txt3 {
+.priem-add-txt {
     width: 335px;
     height: 72px;
     color: #000000;
     line-height: 171%;
     margin-left: 23px;
 }
-
-/* .priem-btn3 {
-    width: 50px;
-    height: 50px;
-    border-radius: 25px;
-    border: solid;
-    border-width: 1px;
-    color: #000000;
-    text-align: center;
-    text-decoration: none;
-    margin-right: 15px;
-} */
 
 /* чек-ап */
 
