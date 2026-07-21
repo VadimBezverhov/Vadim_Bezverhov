@@ -272,7 +272,7 @@
 .header-main {
     position: relative;
     width: 1270px;
-    height: 718px;
+    height: 100%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -289,15 +289,23 @@
 }
 
 .header-bl1 {
-    width: 1270;
-    height: 175px;
+    width: 100%;
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-bl1-top {
+    height: 180px;
     display: flex;
     justify-content: space-between;
 }
 
 .header-bl1-left {
     width: 210px;
-    height: 175px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .header-logo {
@@ -321,8 +329,8 @@
 
 .header-bl1-right {
     width: 270px;
-    height: 175px;
-    margin-top: 51px;
+    height: 130px;
+    margin-top: 50px;
     text-align: right;
 }
 
@@ -375,25 +383,65 @@
 }
 
 .header-menu {
-    height: 30px;
-    margin-top: 30px;
+    height: 38px;
+    margin-top: 20px;
+}
+
+.header-menu  a {
+    padding: 5px 10px;
+}
+
+.header-menu  a:hover {
+    background-color: #EABC66;
+    color: rgba(36, 25, 19, 0.8);
 }
 
 .header-menu-text {
     text-decoration: none;
     color: rgba(36, 25, 19, 0.6);
-    margin-right: 26px;
 }
 
 .header-menu-text1 {
     text-decoration: none;
     color: #000000;
-    margin-right: 26px;
+}
+
+.header-menu-controls, .header-menu-open, .header-menu-close {
+    display: none;
+}
+
+.visible-open {
+    display: block;
+    width: 55px;
+    height: 55px;
+    border-radius: 27px;
+    border: none;
+    cursor: pointer;
+    border: 2px solid white;
+    background-color: #EED198;
+    opacity: 1;
+}
+
+.visible-close {
+    display: block;
+    width: 55px;
+    height: 55px;
+    border-radius: 27px;
+    border: none;
+    cursor: pointer;
+    border: 2px solid white;
+    background-color: #EED198;
+    opacity: 1;
+}
+
+.hide {
+    display: none;
 }
 
 .header-bl2 {
     width: 1010px;
     height: 186px;
+    /* margin-top: 30px; */
 }
 
 .header-h1 {
@@ -1697,32 +1745,84 @@
     }
 
 
+    .block-header {
+        height: 550px;
+        background-color: #F8DDAE;
+    }
+
+
 
 
     .header-main {
-        width: 340px;
-        background-color: greenyellow;
+        width: 360px;
+        /* background-color: greenyellow; */
+        /* overflow-x: hidden; */
     }
 
     .header-bl1 {
-        width: 100%;
-        height: 160px;
+        /* width: 100%; */
+        width: 360px;
+        height: 85px;
+        /* position: relative; */
+        position: fixed;
+        background-color: #F8DDAE;
+        z-index: 2;
     }
 
     .header-bl1-left {
         width: 100%;
         height: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 5px 15px;
+
+    }
+
+    .header-menu-controls {
+        display: block;
+        /* position: fixed; */
+        width: 55px;
+        height: 55px;
+        /* top: 45px; */
+        /* right: calc((100vw - 340px) / 2 + 15px); */
+        /* z-index: 1; */
+        border-radius: 27px;
+        margin-top: 10px;
+    }
+
+    .header-menu-open {
+        display: block;
+        width: 55px;
+        height: 55px;
+        border-radius: 27px;
+        border: none;
+        cursor: pointer;
+        border: 2px solid white;
+        background-color: #EED198;
     }
 
     .header-menu {
-        width: 136px;
-        height: 300px;
+        width: 135px;
+        height: 160px;
+        margin: 0;
+        background-color: #EED198;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        right: -470px;
+        top: 85px;
+        border: 2px solid white;
+        transition: 0.5s;
+
     }
 
     .header-menu a {
         font-size: 12px;
         line-height: 16px;
-        color:#000000;
+        color: rgba(36, 25, 19, 0.6);
+        /* color:#000000; */
+        display: flex;
+
     }
 
 
@@ -1730,13 +1830,14 @@
     .header-logo {
         width: 70px;
         height: 75px;
-        margin-top: 36px;
-        margin-left: 16px;
+        /* margin-top: 36px; */
+        margin: 0;
     }
 
     .header-bl2 {
         width: 100%;
         height: 70px;
+        margin-top: 85px;
     }
 
     .header-h1 {
@@ -1750,6 +1851,7 @@
         height: 46px;
         justify-content: center;
         margin-top: 22px;
+        margin-bottom: 32px;
     }
 
     .header-btn2 {
