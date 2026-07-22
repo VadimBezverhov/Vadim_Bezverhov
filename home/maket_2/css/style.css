@@ -19,6 +19,7 @@
     opacity: 1;
 } */
 
+
 .benz-b-80 {
     font-family: 'Benzin';
     font-weight: bold;
@@ -527,13 +528,14 @@
 }
 
 .otd-gallery-txt2 {
-    height: 93px;
+    height: 63px;
     color: rgba(36, 25, 19, 0.8);
 }
 
 .otd-gallery-txt3 {
     height: 74px;
     line-height: 25px;
+    margin-top: 30px;
     margin-bottom: 24px;
     color: #241913;
 }
@@ -604,21 +606,27 @@
 
 .otd-map {
     width: 1270px;
-    height: 500px;
+    height: 450px;
     margin: 0 auto;
+    display: grid;
+    grid-template-columns: 490px 765px;
+    /* Строки: 40px, 35px, 35px, 25px */
+    grid-template-rows: 63px 129px 45px 25px;
+    gap: 15px;
+
 }
 
-.otd-map-main {
-    width: 100%;
-    height: 100%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-}
-
-.otd-map-left {
-    width: 437px;
-    height: 100%;
+.otd-map-img {
+    grid-column: 2;
+    grid-row: 1 / 5;
+    width: 765px;
+    height: 405px;
+    border-style: solid;
+    border-width: 9px;
+    border-radius: 14px;
+    border-color: #F8DDAE;
+    position:relative;
+    overflow:hidden;
 }
 
 .otd-map-adr {
@@ -663,10 +671,10 @@
 }
 
 .otd-map-btns {
-    width: 100%;
+    width: 437px;
+    height: 45px;
     display: flex;
     justify-content: space-between;
-    margin-top: 14px;
 }
 
 .otd-adr-btn1 {
@@ -680,16 +688,7 @@
     cursor: pointer;
 }
 
-.otd-map-img {
-    width: 764px;
-    height: 406px;
-    border-style: solid;
-    border-width: 9px;
-    border-radius: 14px;
-    border-color: #F8DDAE;
-    position:relative;
-    overflow:hidden;
-}
+
 
 /* uslugi */
 
@@ -973,7 +972,7 @@
 }
 
 .hist-header {
-    width: 1270px;
+    width: 100%;
     height: 93px;
     display: flex;
     justify-content: center;
@@ -985,7 +984,8 @@
 }
 
 .hist-bl1 {
-    width: 1270px;
+    position: relative;
+    width: 100%;
     height: 570px;
     display: flex;
     justify-content: space-between;
@@ -997,6 +997,8 @@
 }
 
 .hist-bl1-2 {
+    position: absolute;
+    left: 373px;
     width: 490px;
     height: 570px;
     background: url("../img/image_13.png") center center no-repeat;
@@ -1009,7 +1011,7 @@
 }
 
 .hist-bl2 {
-    width: 1270px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1611,7 +1613,8 @@
 /* адаптив */
 
 @media all and (max-width: 1580px) {
-    .header-main, .otd-gallery, .otd-map, .usl, .usl-01, .usl-02, .usl-03, .footer {
+    .header-main, .otd-gallery, .otd-map, .usl, .usl-01, .usl-02, .usl-03, .footer,
+    .hist-main {
         width: 1024px;
     }
 
@@ -1646,7 +1649,14 @@
         height: 124px;
     }
 
-    .otd-map-left, .otd-map-adr {
+    .otd-map {
+        width: 1024px;
+        grid-template-columns: 364px 645px;
+        grid-template-rows: 63px 129px 45px 25px;
+        gap: 15px;
+    }
+
+    .otd-map-adr {
         width: 360px;
     }
 
@@ -1654,12 +1664,16 @@
         margin: 0;
     }
 
+    .otd-map-btns {
+        width: 360px;
+    }
+
     .otd-adr-btn1 {
         width: 150px;
     }
 
     .otd-map-img {
-        width: 654px;
+        width: 645px;
     }
 
     .usl-fon1 {
@@ -1688,6 +1702,31 @@
         height: 285px;
     }
 
+    .hist-bl1-2 {
+        top: 135px;
+        left: 301px;
+        width: 388px;
+        height: 451px;
+    }
+
+    .hist-txt-yt {
+        font-size: 30px;
+        line-height: 34px;
+    }
+
+    .hist-bl-yt {
+        width: 824px;
+        height: 439px;
+    }
+
+    .hist-fr-yt {
+        width: 824px;
+        height: 439px;
+    }
+
+
+
+
 
 
 }
@@ -1714,7 +1753,8 @@
 
 
 @media all and (max-width: 1050px) {
-    .header-main, .otd-gallery, .otd-map, .usl, .usl-01, .usl-02, .usl-03, .footer {
+    .header-main, .otd-gallery, .otd-map, .usl, .usl-01, .usl-02, .usl-03, .footer,
+    .hist-main {
         width: 360px;
     }
 
@@ -1724,7 +1764,7 @@
         display: none;
     }
 
-    .block-header, .block-otd, .otd-gallery, .block-map, .otd-map {
+    .block-header, .block-otd, .otd-gallery, .block-map, .otd-map, .block-hist {
         background-color: #F8DDAE;
     }
 
@@ -1889,20 +1929,64 @@
         margin-top: 15px;
     }
 
-
-
     .block-map {
-        height: 630px;
+        height: 600px;
     }
 
     .otd-map {
         padding-top: 20px;
+        height: 100%;
+        /* background-color: aquamarine; */
     }
 
+    .otd-map {
+        width: 360px;
+        grid-template-columns: 360px;
+        grid-template-rows: 50px 190px 135px 100px;
+        gap: 5px;
+        grid-column: auto;
+        grid-row: auto;
+        justify-items: center;
+    }
 
+    .otd-gallery-txt2 {
+        order: 1;
+        grid-column: auto;
+        grid-row: auto;
+        height: 43px;
+    }
 
+    .otd-map-img {
+        order: 2;
+        grid-column: auto;
+        grid-row: auto;
+        width: 340px;
+        height: 175px;
+    }
 
-    
+    .otd-map-adr {
+        order: 3;
+        grid-column: auto;
+        grid-row: auto;    
+        width: 340px;
+    }
+
+    .otd-map-txt2 {
+        font-size: 13px;
+    }
+
+    .otd-map-btns {
+        order: 4;
+        grid-column: auto;
+        grid-row: auto;
+        width: 340px;
+        height: 100px;
+        flex-direction: column;
+    }
+
+    .otd-adr-btn1 {
+        width: 100%;
+    }
 
     .block-usl {
         height: 535px;
@@ -1975,6 +2059,90 @@
         height: 100px;
         background-color: #F8DDAE;
     }
+
+    .hist-main {
+        padding: 0;
+    }
+
+    .hist-header {
+        height: 50px;
+    }
+
+    .hist-bl1 {
+        height: 780px;
+        margin-top: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hist-bl1-2 {
+        position: static;
+        width: 310px;
+        height: 361px;
+    }
+
+    .hist-bl1-1, .hist-bl1-3 {
+        width: 360px;
+        text-align: center;
+    }
+
+    .hist-bl2 {
+        margin-top: 50px;
+    }
+
+    .hist-txt, .hist-txt1, .hist-bl1-txt1, .hist-bl1-txt2 {
+        font-size: 15px;
+        line-height: 30px;
+    }
+
+    .hist-bl1-txt1, .hist-bl1-txt2 {
+        width: 360px;
+        height: 200px;
+    }
+
+    .hist-h3 {
+        width: 100%;
+        height: 35px;
+        font-size: 30px;
+        line-height: 34px;
+        text-align: center;
+    }
+
+    .hist-h6 {
+        padding-top: 18px;
+        margin-bottom: 20px;
+    }
+
+    .hist-txt-yt {
+        display: none;
+    }
+
+    .hist-bl-yt {
+        width: 340px;
+        height: 181px;
+        margin-top: 5px;
+    }
+
+    .hist-fr-yt {
+        width: 340px;
+        height: 181px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     .block-footer {
         width: 100%;
