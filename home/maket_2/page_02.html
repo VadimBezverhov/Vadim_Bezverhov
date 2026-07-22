@@ -15,31 +15,46 @@
 
         <div class="content-header">
             <div class="header-main">
-                <div class="header-bgr-4"></div>
                 <div class="header-bl1">
-                    <div class="header-bl1-left">
-                        <div class="header-logo"></div>
-                        <p class="header-bl1-str1 benz-m-20">VetMajor</p>
-                        <p class="header-bl1-str2 benz-r-17">С заботой о жизни</p>
-                    </div>
-                    <div class="header-bl1-right">
-                        <div class="header-soc">
-                            <div class="header-soc1"></div>
-                            <div class="header-soc2"></div>
-                            <div class="header-soc3"></div>
-                            <div class="header-soc4"></div>
-                        </div>
-                        <button class="header-btn1 benz-r-14">+7 918 111 92 34</button>
-                    </div>
-                </div>
+                    <div class="header-bl1-top">
+                        <div class="header-bl1-left">
+                            <div class="header-logo"></div>
+                            <p class="header-bl1-str1 benz-m-20">VetMajor</p>
+                            <p class="header-bl1-str2 benz-r-17">С заботой о жизни</p>
 
-                <div class="header-menu">
-                    <a class="benz-r-16 header-menu-text" href="index.html">Главная</a>
-                    <a class="benz-r-16 header-menu-text" href="page_01.html">История</a>
-                    <a class="benz-r-20 header-menu-text1" href="page_02.html">Услуги и цены</a>
-                    <a class="benz-r-16 header-menu-text" href="page_03.html">Чек-ап</a>
-                    <a class="benz-r-16 header-menu-text" href="page_04.html">Врачи</a>
-                    <a class="benz-r-16 header-menu-text" href="#">Контакты</a>
+                            <div class="header-menu-controls">
+                                <button class="header-menu-open" onclick="openHandler()">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="white" class="bi bi-list" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                                    </svg>
+                                </button> 
+                                <button class="header-menu-close" onclick="closeHandler()">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" class="bi bi-x" viewBox="0 0 16 16">
+                                        <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+                                    </svg>
+                                </button>
+                            </div>                                
+                        </div>
+
+                        <div class="header-bl1-right">
+                            <div class="header-soc">
+                                <div class="header-soc1"></div>
+                                <div class="header-soc2"></div>
+                                <div class="header-soc3"></div>
+                                <div class="header-soc4"></div>
+                            </div>
+                            <button class="header-btn1 benz-r-14">+7 918 111 92 34</button>
+                        </div>
+                    </div>                        
+
+                    <div class="header-menu">
+                        <a class="benz-r-16 header-menu-text" href="index.html">Главная</a>
+                        <a class="benz-r-16 header-menu-text" href="page_01.html">История</a>
+                        <a class="benz-r-20 header-menu-text1" href="page_02.html">Услуги и цены</a>
+                        <a class="benz-r-16 header-menu-text" href="page_03.html">Чек-ап</a>
+                        <a class="benz-r-16 header-menu-text" href="page_04.html">Врачи</a>
+                        <a class="benz-r-16 header-menu-text" href="#">Контакты</a>
+                    </div>
                 </div>
 
                 <div class="header-bl2">
@@ -70,7 +85,6 @@
                             Заботимся о здоровье животных
                         </p>
                     </div>
-
                     <div class="header-bl4-1">
                         <p class="header-bl4-str1 benz-b-30">
                             >500
@@ -79,7 +93,6 @@
                             Успешно вылеченных питомцев
                         </p>
                     </div>
-
                     <div class="header-bl4-1">
                         <p class="header-bl4-str1 benz-b-30">
                             90%
@@ -89,6 +102,8 @@
                         </p>
                     </div>
                 </div>
+
+                <div class="header-bgr-4"></div>
             </div>
         </div>
     </div>
@@ -206,6 +221,30 @@
             </div>
         </div>
     </div>
+
+
+    <script>
+        var menu = document.querySelector('.header-menu');
+        var openBtn = document.querySelector('.header-menu-open');
+        var closeBtn = document.querySelector('.header-menu-close');
+        var shadow = document.querySelector('.shadow');
+
+        function openHandler() {
+            menu.style.right = 0;
+            openBtn.className = 'hide';
+            // shadow.className += ' visible';
+            // shadow.style.left = 0;
+            closeBtn.className = 'visible-close';
+        }
+
+        function closeHandler() {
+            menu.style.right = -480 + 'px';
+            openBtn.className = 'visible-open';
+            // shadow.className = 'shadow';
+            // shadow.style.left = '100vw';
+            closeBtn.className = 'hide';
+        }
+    </script>    
 
 </body>
 </html>

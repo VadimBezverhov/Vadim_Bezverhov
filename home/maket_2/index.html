@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="fonts/benzin/stylesheet.css">
-    <link rel="stylesheet" href="fonts/firsneue/stylesheet.css">
+    <!-- <link rel="stylesheet" href="fonts/firsneue/stylesheet.css"> -->
     <link rel="stylesheet" href="css/style.css">
 
 </head>
@@ -19,7 +19,9 @@
         <div class="content-header">
             <div class="header-main">
                 <div class="header-bl1">
-                    
+
+                    <!-- <div class="shadow"></div> -->
+
                     <div class="header-bl1-top">
                         <div class="header-bl1-left">
                             <div class="header-logo"></div>
@@ -38,8 +40,8 @@
                                     </svg>
                                 </button>
                             </div>
-
                         </div>
+
                         <div class="header-bl1-right">
                             <div class="header-soc">
                                 <div class="header-soc1"></div>
@@ -59,10 +61,7 @@
                         <a class="benz-r-16 header-menu-text" href="page_04.html">Врачи</a>
                         <a class="benz-r-16 header-menu-text" href="#">Контакты</a>
                     </div>
-
                 </div>
-
-
 
                 <div class="header-bl2">
                     <h1 class="header-h1 benz-b-80">
@@ -92,7 +91,6 @@
                             Заботимся о здоровье животных
                         </p>
                     </div>
-
                     <div class="header-bl4-1">
                         <p class="header-bl4-str1 benz-b-30">
                             >500
@@ -101,7 +99,6 @@
                             Успешно вылеченных питомцев
                         </p>
                     </div>
-
                     <div class="header-bl4-1">
                         <p class="header-bl4-str1 benz-b-30">
                             90%
@@ -203,8 +200,6 @@
                         <circle cx="200" cy="200" r="200" fill="#B8D4EE"/>
                     </svg>
 
-                    <div class="usl-01-img"></div>
-
                     <div class="usl-01-main">
                         <button class="usl-btn-otd benz-m-12">Отделения</button>
                         <p class="usl-01-txt1 benz-b-55">
@@ -230,10 +225,11 @@
                                     2:32
                                 </p>
                             </div>
-
                         </div>
-
                     </div>
+
+                    <div class="usl-01-img"></div>
+
                 </div>
 
                 <div class="usl-02">
@@ -244,8 +240,6 @@
                     <svg class="usl-fon2" width="400" height="200" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
                         <circle cx="200" cy="200" r="200" fill="#D9326E"/>
                     </svg>
-
-                    <div class="usl-02-img"></div>
 
                     <div class="usl-01-main">
                         <button class="usl-btn-otd benz-m-12">Отделения</button>
@@ -272,9 +266,11 @@
                                     2:32
                                 </p>
                             </div>
-
                         </div>
                     </div>
+
+                    <div class="usl-02-img"></div>
+
                 </div>
 
                 <div class="usl-03">
@@ -285,8 +281,6 @@
                     <svg class="usl-fon2" width="400" height="200" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
                         <circle cx="200" cy="200" r="200" fill="#38FF64"/>
                     </svg>
-
-                    <div class="usl-03-img"></div>
 
                     <div class="usl-01-main">
                         <button class="usl-btn-otd benz-m-12">Отделения</button>
@@ -313,11 +307,12 @@
                                     2:32
                                 </p>
                             </div>
-
                         </div>
                     </div>
-                </div>
 
+                    <div class="usl-03-img"></div>
+
+                </div>
             </div>
 
             <div class="usl-01-control">
@@ -366,6 +361,7 @@
         </div>
     </div>
 
+
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="js/owl.carousel.min.js"></script>
     
@@ -384,11 +380,9 @@
                 nav: true,
                 navText: [$('.usl-btn-l'),$('.usl-btn-r')],
                 items: 1,
-                //dots: true
             });
         });
     </script>    
-
 
     <script>
         var menu = document.querySelector('.header-menu');
@@ -396,26 +390,22 @@
         var closeBtn = document.querySelector('.header-menu-close');
         var shadow = document.querySelector('.shadow');
 
-
         function openHandler() {
             menu.style.right = 0;
             openBtn.className = 'hide';
             // shadow.className += ' visible';
             // shadow.style.left = 0;
             closeBtn.className = 'visible-close';
-
         }
 
         function closeHandler() {
-            menu.style.right = -470 + 'px';
+            menu.style.right = -480 + 'px';
             openBtn.className = 'visible-open';
             // shadow.className = 'shadow';
             // shadow.style.left = '100vw';
             closeBtn.className = 'hide';
         }
     </script>
-
-
 
 </body>
 </html>
