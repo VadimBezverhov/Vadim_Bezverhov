@@ -1282,6 +1282,11 @@
     margin-left: 11px;
 }
 
+.priem-txt2, .priem-txt3 {
+    width: 1145px;
+    height: 22px;
+}
+
 .priem-txt-l {
     width: 330px;
     height: 30px;
@@ -1385,6 +1390,7 @@
     width: 100%;
     height: 100%;
     transform-style: preserve-3d;
+    cursor: pointer;
 }
 
 /* Общие стили сторон */
@@ -1768,8 +1774,9 @@
         margin-bottom: 30px;
     }
 
-    .priem-txt1 {
+    .priem-txt1, .priem-txt2, .priem-txt3 {
         width: 900px;
+        height: 22px;
     }
 
     .priem-txt2 {
@@ -2370,12 +2377,13 @@
 
     /* прием */
 
-.block-priem {
-    height: 2160px;
-}
+    .block-priem {
+        height: 1300px;
+    }
 
     .priem-main {
         padding-top: 0;
+        height: 1260px;
     }
 
     .priem-btn1 {
@@ -2420,9 +2428,11 @@
     }
 
     .priem-txt2 {
+        width: 300px;
         height: 70px;
     }
     .priem-txt3 {
+        width: 300px;
         height: 50px;
     }
 
@@ -2449,6 +2459,17 @@
         font-size: 11px;
         line-height: 15px;
     }
+
+.priem-bl2 {
+    width: 100%;
+    height: 674px;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+.priem-bl3 {
+    margin-top: 20px;
+}
 
 
 
